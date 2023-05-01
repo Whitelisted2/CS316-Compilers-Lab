@@ -1,0 +1,8 @@
+PROGRAM p
+BEGIN
+	STRING hello := "hello";
+	FUNCTION VOID main()
+	BEGIN
+		WRITE (hello);
+	END
+END

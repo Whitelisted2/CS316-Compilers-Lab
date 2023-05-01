@@ -1,0 +1,31 @@
+PROGRAM order
+BEGIN
+    STRING eol := "\n";
+	STRING str := "l";
+
+    FUNCTION INT adder (INT a, INT b, INT c, INT d, INT e, INT f)
+	BEGIN
+        WRITE(a, eol, b, eol, c, eol, d, eol, e, eol, f, eol);
+		RETURN 0;
+	END
+	
+	FUNCTION VOID main ()
+	BEGIN
+		INT ret1;
+		WRITE(str);
+		// WRITE(eol);
+        ret1 := adder(1, 2, 3, 4, 5, 6);
+        WRITE(eol, eol, ret1);
+		// WRITE(eol);
+	END
+END
+
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 
+// 
+// 0

@@ -1,0 +1,40 @@
+PROGRAM test
+BEGIN
+    INT A,B,C,D,E,F,G,H;
+    STRING A1 := "A  B  C  D  E  F  G  H\n";
+    STRING A2 := "  ";
+    STRING newline := "\n";
+    FUNCTION VOID main()
+    BEGIN
+        A := 7;
+        B := 0;
+        C := 0;
+        D := 0;
+        E := 0;
+        F := 0;
+        G := 0;
+        H := 0;
+        WRITE(A1);
+        WRITE(A, A2, B, A2, C, A2, D, A2, E, A2, F, A2, G, A2, H, newline);
+        B := A + 2;
+        WRITE(A, A2, B, A2, C, A2, D, A2, E, A2, F, A2, G, A2, H, newline);
+        C := A + B;
+        WRITE(A, A2, B, A2, C, A2, D, A2, E, A2, F, A2, G, A2, H, newline);
+        D := C + B;
+        WRITE(A, A2, B, A2, C, A2, D, A2, E, A2, F, A2, G, A2, H, newline);
+        B := C + B;
+        WRITE(A, A2, B, A2, C, A2, D, A2, E, A2, F, A2, G, A2, H, newline);
+        A := A + B;
+        WRITE(A, A2, B, A2, C, A2, D, A2, E, A2, F, A2, G, A2, H, newline);
+        E := C + D;
+        WRITE(A, A2, B, A2, C, A2, D, A2, E, A2, F, A2, G, A2, H, newline);
+        F := C + D;
+        WRITE(A, A2, B, A2, C, A2, D, A2, E, A2, F, A2, G, A2, H, newline);
+        G := C + B;
+        WRITE(A, A2, B, A2, C, A2, D, A2, E, A2, F, A2, G, A2, H, newline);
+        H := E + F;
+        WRITE(A, A2, B, A2, C, A2, D, A2, E, A2, F, A2, G, A2, H, newline);
+
+    END
+    
+END
